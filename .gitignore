@@ -1,0 +1,34 @@
+# zip, map and text files
+*.zip
+*.map
+*.txt
+
+# files
+all-img
+optimized-img
+resized
+
+# css preprocessors
+less
+scss
+
+# css files
+*-grid.css
+*-grid.min.css
+*-reboot.min.css
+*-reboot.css
+
+# js files
+*bundle.js
+*bundle.min.js
+
+# images
+*.png
+*.jpg
+
+# multimedia
+*.mp4
+*.mp3
+*.gif
+
+
