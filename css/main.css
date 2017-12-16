@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i|Poiret+One');
+
+/****************************************
+            - default fonts -
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poiret One', cursive;
+*****************************************/
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
