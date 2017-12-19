@@ -1,0 +1,140 @@
+
+.top-banner {
+    height: 5em;
+    padding-top: 2em;
+}
+
+.top-banner__logo {
+    font-size: 1.4em;
+    font-weight: bolder;
+    text-align: right;
+}
+
+.top-banner__menu {
+    font-size: 0.7em;
+    font-weight: 700;
+}
+
+.top-banner__menu__nav {}
+
+.top-banner__menu__nav ul {
+    margin: auto;
+}
+
+.top-banner__menu__nav li {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.top-banner__menu__nav a {
+    color: aliceblue;
+}
+
+.top-banner__menu__nav a:active, 
+.top-banner__menu__nav a:visited,
+.top-banner__menu__nav a:hover {
+    text-decoration: none;
+}
+
+.top-banner__search {
+    text-align: right;
+}
+
+.top-banner__cart {
+    
+}
+
+.top-banner__search:hover,
+.top-banner__cart:hover {
+    cursor: pointer;
+}
+
+.top-banner__cart__counter {
+    display: inline-block;
+    min-width: 20px;
+    height: 20px;
+    text-align:center;
+    font-size: 0.7em;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+
+
+.header-msg {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 25vh;
+    
+}
+
+.header-msg * {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header-msg__h1 {
+    font-weight: bold;
+}
+
+.header-msg__short-border {
+    width: 20%;
+    height: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    clear: both;
+    
+}
+
+.header-msg__p {
+    width: 85%;
+}
+
+.header-msg__btn {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.header-msg__btn * {
+    min-width: 150px;
+    border: 3px solid;
+}
+
+.header-caroussel {
+    position: absolute;
+    font-size: 0.8em;
+    bottom: 30px;
+    left: 50%;
+    width: 60px;
+    transform: translateX(-25%);
+}
+
+.header-caroussel * {
+    margin: auto;
+}
+
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform-origin: left;
+    transform: translateX(-50%) rotateZ(-3deg);
+    width: 260px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    background: #28a745;
+}
+
+.section-title__h1 {
+    transform-origin: left;
+    transform: rotateZ(3deg);
+    text-align: center;
+}
+
+/*** custom design to bootstrap defaults ***/
+.btn-square { border-radius: 0; }
