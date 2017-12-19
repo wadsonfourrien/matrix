@@ -20,86 +20,105 @@
         <main role="main">
             
             <!-- header section -->
-            <header class="container-fluid">
-                <div>
-                    <div class="row">
-                        <div class="col-lg-2 col-xl-2">Matrix</div>
-                        
-                        <div class="col-lg-8 col-xl-8">
-                            <nav class="navbar">
-                                <ul class="list-inline" style="margin: auto;">
-                                    <li class="list-inline-item"><a href="#">HOME</a></li>
-                                    <li class="list-inline-item"><a href="#">ABOUT</a></li>
-                                    <li class="list-inline-item"><a href="#">PORTFOLIO</a></li>
-                                    <li class="list-inline-item"><a href="#">BLOG</a></li>
-                                    <li class="list-inline-item"><a href="#">CONTACT</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        
-                        <div class="col-lg-2 col-xl-2">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            <span></span>
-                        </div>
+            <header class="container-fluid lay-header">
+                <div class="row top-banner">
+                    <div class="col-lg-2 col-xl-2 text-right top-banner__logo">
+                        <span class="top-banner__logo__span">MATRIX</span>
+                    </div>
+
+                    <div class="col-lg-8 col-xl-7 top-banner__menu">
+                        <nav class="navbar top-banner__menu__nav">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#" class="text-success">HOME</a></li>
+                                <li class="list-inline-item"><a href="#">ABOUT</a></li>
+                                <li class="list-inline-item"><a href="#">PORTFOLIO</a></li>
+                                <li class="list-inline-item"><a href="#">BLOG</a></li>
+                                <li class="list-inline-item"><a href="#">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 col-xl-1 top-banner__search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-lg-2 col-xl-1 top-banner__cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <div class="top-banner__cart__counter bg-success"><span>0</span></div>
                     </div>
                     
                 </div>
                 
-                <div class="row">
-                    <div>
-                        <h1 class="align-center">WELCOME TO OUR WORLD</h1>
-                    </div>
-                    <div class="">short border</div>
-                    <p>
+                <div class="row header-msg">
+                    
+                    <h1 class="header-msg__h1">WELCOME TO OUR WORLD</h1>
+                    <div class="bg-success header-msg__short-border"></div>
+                    <p class="header-msg__p">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type
                         specimen.
                     </p>
+                    <div  class="header-msg__btn">
+                        <a href="#" class="btn btn-square btn-outline-light">
+                            Learn More
+                        </a>
+                    </div>
                     
-                    <button>Learn More</button>
                     
                 </div>
                 
-                <div>slider mini breadcrumb</div>
+                <div class="row header-caroussel">
+                    <i class="fa fa fa-circle text-success" aria-hidden="true"></i>
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                </div> 
+                
             </header>
             
             <!-- about section -->
-            <section class="container-fluid">
-                <div class=""></div>
-                <h1>About us</h1>
-                <div>
-                    <img src="" alt="image">
+            <section class="container lay-about">
+                <div class="section-title">
+                    <h1 class="section-title__h1">About us</h1>
                 </div>
                 
-                <div>
-                    <div>
-                        <h2>Hello! We're a Creative Agency</h2>
-                        <span>short border</span>
-                        <p>
-                            It is a long established fact that a reader will be distracted by the readable
-                            content of a page when looking at its layout. The point of using Lorem Ipsum is
-                            that it has a more-or-less normal distribution of letters, as opposed to using
-                            'Content here, content here', making it look like readable English. Many
-                            desktop publishing packages and web page editors now use Lorem Ipsum as
-                            their default model text, and a search for 'lorem ipsum' will uncover many web
-                            sites still in their infancy.
-                        </p>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div>
+                        </div>
+                        <div>
+                            <img src="images/creativity-300x300.jpg" alt="image">
+                        </div>
                     </div>
-                    <div>
-                        <strong>Mission </strong> <span> - we deliver uniqueness and quality</span> <br>
-                        <strong>Skills </strong> <span> - delivering fast and excellent results</span> <br>
-                        <strong>Clients </strong> <span> - satisfied clients thanks to our experience</span> <br>
-                    </div>
-                    
-                    <div>
-                        <a href="#" target="_blank">browse our works</a>
+                
+                    <div class="col-xl-6">
+                        <div>
+                            <h2>Hello! We're a Creative Agency</h2>
+                            <span>short border</span>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable
+                                content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                that it has a more-or-less normal distribution of letters, as opposed to using
+                                'Content here, content here', making it look like readable English. Many
+                                desktop publishing packages and web page editors now use Lorem Ipsum as
+                                their default model text, and a search for 'lorem ipsum' will uncover many web
+                                sites still in their infancy.
+                            </p>
+                        </div>
+                        <div>
+                            <strong>Mission </strong> <span> - we deliver uniqueness and quality</span> <br>
+                            <strong>Skills </strong> <span> - delivering fast and excellent results</span> <br>
+                            <strong>Clients </strong> <span> - satisfied clients thanks to our experience</span> <br>
+                        </div>
+
+                        <div>
+                            <a href="#" target="_blank">browse our works</a>
+                        </div>
+
                     </div>
                     
                 </div>
                 
-                <div>
-                    <div>
+                <div class="row">
+                    <div class="col-xl-4">
                         <i>icon</i>
                         <h3>Photography</h3>
                         <p>
@@ -109,7 +128,7 @@
                         </p>
                         
                     </div>
-                    <div>
+                    <div class="col-xl-4">
                         <i>icon</i>
                         <h3>Web Design</h3>
                         <p>
@@ -118,7 +137,7 @@
                             embarrassing hidden in the middle of text.
                         </p>
                     </div>
-                    <div>
+                    <div class="col-xl-4">
                         <i>icon</i>
                         <h3>Marketing</h3>
                         <p>
@@ -131,20 +150,24 @@
             </section>
             
             <!-- recent works section -->
-            <section class="container-fluid">
-                <div class=""></div>
-                <h1>Recent works</h1>
-                <div>
-                    <ul>
-                        <li><span>ALL</span></li>
-                        <li><span>ANIMATION</span></li>
-                        <li><span>APP DESIGN</span></li>
-                        <li><span>PHOTOGRAPHY</span></li>
-                        <li><span>WEB DESIGN</span></li>
-                    </ul>
+            <section class="container-fluid lay-recent-works">
+                <div class="section-title">
+                    <h1 class="section-title__h1">Recent works</h1>
                 </div>
                 
-                <div>
+                <div class="row">
+                    <div class="col-lg-12 col-xl-12">
+                        <ul class="">
+                            <li class="list-inline-item text-success"><span>ALL</span></li>
+                            <li class="list-inline-item"><span>ANIMATION</span></li>
+                            <li class="list-inline-item"><span>APP DESIGN</span></li>
+                            <li class="list-inline-item"><span>PHOTOGRAPHY</span></li>
+                            <li class="list-inline-item"><span>WEB DESIGN</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
                     <ul>
                         <li>
                             <img src="#" alt="img">
@@ -208,9 +231,10 @@
             </section>
             
             <!-- our news section -->
-            <section class="container-fluid">
-                <div class=""></div>
-                <h1>Our news</h1>
+            <section class="container-fluid lay-news">
+                <div class="section-title">
+                    <h1 class="section-title__h1">Our news</h1>
+                </div>
                 
                 <div>
                     <aside>
@@ -285,9 +309,10 @@
             </section>
             
             <!-- our team section -->
-            <section class="container-fluid">
-                <div class=""></div>
-                <h1>Our team</h1>
+            <section class="container-fluid lay-team">
+                <div class="section-title">
+                    <h1 class="section-title__h1">Our team</h1>
+                </div>
                 
                 <div>
                     <div>
@@ -405,9 +430,10 @@
             
             
             <!-- pricing table section -->
-            <section class="container-fluid">
-                <div class=""></div>
-                <h1>Pricing table</h1>
+            <section class="container-fluid lay-pricing">
+                <div class="section-title">
+                    <h1 class="section-title__h1">Pricing table</h1>
+                </div>
                 
                 <div>
                     <div>
