@@ -1,3 +1,5 @@
+@import url('layout.css') screen;
+@import url('modules/modules.css') screen;
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i|Poiret+One');
 
 /****************************************
@@ -9,5 +11,4 @@ font-family: 'Poiret One', cursive;
 * {
     font-family: 'Josefin Sans', sans-serif;
 }
-
 
