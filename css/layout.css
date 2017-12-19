@@ -1,0 +1,32 @@
+.lay-header {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/header-prototype.png) center;
+    color: aliceblue;
+}
+
+.lay-about {
+    min-height: 500px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.lay-recent-works {
+    
+}
+
+.lay-news {
+    
+}
+
+.lay-team {
+    
+}
+
+.lay-pricing {
+    
+}
+
+.lay-footer {
+    
+}
