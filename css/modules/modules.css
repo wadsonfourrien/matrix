@@ -50,6 +50,12 @@
     
 }
 
+.top-banner__search-cart > div {
+    display: inline-block;
+    float: left;
+    margin-left: 32px;
+}
+
 .top-banner__search:hover,
 .top-banner__cart:hover {
     cursor: pointer;
@@ -68,9 +74,11 @@
 
 
 .header-msg {
-    width: 600px;
+    max-width: 600px;
+    min-height: 10%;
     margin: 0 auto;
-    margin-top: 25vh;
+    margin-top: 8.5%;
+    margin-bottom: 12.5%;
     
 }
 
@@ -504,10 +512,11 @@
 }
 
 .pricing-table__plan__head__thumbnail-clip {
+    position: absolute;
     width: 100%;
     height: 100%;
     background: url(../../images/half-rectangle.svg) no-repeat bottom left;
-    
+    bottom: -2px;
 }
 
 .pricing-table__plan__head__title {
