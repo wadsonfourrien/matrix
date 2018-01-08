@@ -8,7 +8,6 @@
         <meta name="keywords" content="Landing Page, Prototype Design, Web Design, UI, UX, Front-end">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <link rel="icon" type="image/png" href="images/favicon.png">
-        
         <link rel="stylesheet" href="css/bootstrap/bootstrap-reboot.css">
         <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
         <link rel="stylesheet" href="icons/font-awesome/css/font-awesome.css">
@@ -20,10 +19,12 @@
         <main role="main">
             
             <!-- header section -->
-            <header class="container-fluid lay-header">
+            <header class="container-fluid lay-header header">
                 <div class="row top-banner">
                     <div class="col-lg-2 col-xl-2 text-right top-banner__logo">
-                        <span class="top-banner__logo__span">MATRIX</span>
+                        <span>
+                            <a href="#" class="top-banner__logo__a">MATRIX</a>
+                        </span>
                     </div>
 
                     <div class="col-lg-8 col-xl-7 top-banner__menu">
@@ -50,7 +51,7 @@
                 <div class="row header-msg">
                     
                     <h1 class="header-msg__h1">WELCOME TO OUR WORLD</h1>
-                    <div class="bg-success header-msg__short-border"></div>
+                    <div class="bg-success short-border"></div>
                     <p class="header-msg__p">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -75,25 +76,22 @@
             </header>
             
             <!-- about section -->
-            <section class="container lay-about">
+            <section class="container lay-about about">
                 <div class="section-title">
                     <h1 class="section-title__h1">About us</h1>
                 </div>
                 
-                <div class="row">
+                <div class="row about-detail">
                     <div class="col-xl-6">
-                        <div>
-                        </div>
-                        <div>
-                            <img src="images/creativity-300x300.jpg" alt="image">
+                        <div class="about-detail__img-box">
+                            <img src="images/creativity-350x350.jpg" alt="women: Creativity hairdressing with tree leaves" class="about-detail__img">
                         </div>
                     </div>
-                
                     <div class="col-xl-6">
-                        <div>
-                            <h2>Hello! We're a Creative Agency</h2>
-                            <span>short border</span>
-                            <p>
+                        <div class="about-detail__content">
+                            <h4 class="bold-h">Hello! We're a Creative Agency</h4>
+                            <div class="bg-success short-border"></div>
+                            <p class="custom-p">
                                 It is a long established fact that a reader will be distracted by the readable
                                 content of a page when looking at its layout. The point of using Lorem Ipsum is
                                 that it has a more-or-less normal distribution of letters, as opposed to using
@@ -103,25 +101,32 @@
                                 sites still in their infancy.
                             </p>
                         </div>
-                        <div>
-                            <strong>Mission </strong> <span> - we deliver uniqueness and quality</span> <br>
-                            <strong>Skills </strong> <span> - delivering fast and excellent results</span> <br>
-                            <strong>Clients </strong> <span> - satisfied clients thanks to our experience</span> <br>
+                        <div class="about-detail__more">
+                            <strong>Mission </strong> <span class="font-italic"> - we deliver uniqueness and quality</span> <br>
+                            <strong>Skills </strong> <span class="font-italic"> - delivering fast and excellent results</span> <br>
+                            <strong>Clients </strong> <span class="font-italic"> - satisfied clients thanks to our experience</span> <br>
                         </div>
 
-                        <div>
-                            <a href="#" target="_blank">browse our works</a>
+                        <div class="about-detail__btn">
+                            <a href="#" target="_blank" class="btn btn-square btn-outline-dark">
+                                <i class="fa fa-folder-o" aria-hidden="true"></i>
+                                <span>Browse our works</span>
+                            </a>
                         </div>
 
                     </div>
                     
                 </div>
                 
-                <div class="row">
+                <div class="row about-specialty">
                     <div class="col-xl-4">
-                        <i>icon</i>
-                        <h3>Photography</h3>
-                        <p>
+                        <div class="about-specialty__icon">
+                            <span>
+                                <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-weight-bold">Photography</h5>
+                        <p class="custom-p">
                             if you are going to use a passage of Lorem Ipsum,
                             you need to be sure there isn't anything
                             embarrassing hidden in the middle of text.
@@ -129,18 +134,26 @@
                         
                     </div>
                     <div class="col-xl-4">
-                        <i>icon</i>
-                        <h3>Web Design</h3>
-                        <p>
+                        <div class="about-specialty__icon">
+                            <span>
+                                <i class="fa fa-laptop" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-weight-bold">Web Design</h5>
+                        <p class="custom-p">
                             if you are going to use a passage of Lorem Ipsum,
                             you need to be sure there isn't anything
                             embarrassing hidden in the middle of text.
                         </p>
                     </div>
                     <div class="col-xl-4">
-                        <i>icon</i>
-                        <h3>Marketing</h3>
-                        <p>
+                        <div class="about-specialty__icon">
+                            <span>
+                                <i class="fa fa-comments-o" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-weight-bold">Marketing</h5>
+                        <p class="custom-p">
                             if you are going to use a passage of Lorem Ipsum,
                             you need to be sure there isn't anything
                             embarrassing hidden in the middle of text.
@@ -150,14 +163,14 @@
             </section>
             
             <!-- recent works section -->
-            <section class="container-fluid lay-recent-works">
+            <section class="container-fluid lay-portfolio portfolio">
                 <div class="section-title">
                     <h1 class="section-title__h1">Recent works</h1>
                 </div>
                 
-                <div class="row">
+                <div class="row portfolio__cat">
                     <div class="col-lg-12 col-xl-12">
-                        <ul class="">
+                        <ul class="portfolio__cat__desc font-weight-bold">
                             <li class="list-inline-item text-success"><span>ALL</span></li>
                             <li class="list-inline-item"><span>ANIMATION</span></li>
                             <li class="list-inline-item"><span>APP DESIGN</span></li>
@@ -167,85 +180,139 @@
                     </div>
                 </div>
                 
-                <div class="row">
-                    <ul>
-                        <li>
-                            <img src="#" alt="img">
-                            <div>
-                                <strong>Soundcloud</strong>
-                                <spa>web design / app design</spa>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="#" alt="img">
-                            <div>
-                                <strong>Soundcloud</strong>
-                                <spa>web design / app design</spa>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="#" alt="img">
-                            <div>
-                                <strong>Soundcloud</strong>
-                                <spa>web design / app design</spa>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="#" alt="img">
-                            <div>
-                                <strong>Soundcloud</strong>
-                                <spa>web design / app design</spa>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="#" alt="img">
-                            <div>
-                                <strong>Soundcloud</strong>
-                                <spa>web design / app design</spa>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="#" alt="img">
-                            <div>
-                                <strong>Soundcloud</strong>
-                                <spa>web design / app design</spa>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="#" alt="img">
-                            <div>
-                                <strong>Soundcloud</strong>
-                                <spa>web design / app design</spa>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="#" alt="img">
-                            <div>
-                                <strong>Soundcloud</strong>
-                                <spa>web design / app design</spa>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="row portfolio__box">
+                    <div class="col-lg-12 col-xl-12">
+                        <ul class="portfolio__box__list">
+                            <li class="list-inline-item portfolio__box__list-item">
+                                <div class="portfolio__box__list-item__img-box">
+                                    <img src="images/gallery/portfolio-img-one-350x350.jpg" alt="portfolio image one" class="portfolio__box__list-item__thumbnail">
+                                </div>
+                                <div class="portfolio__box__list-item__desc">
+                                    <div class="portfolio__box__list-item__desc__content">
+                                        <strong>Soundcloud</strong>
+                                        <div class="bg-success short-border"></div>
+                                        <span>web design / app design</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-inline-item portfolio__box__list-item">
+                                <div class="portfolio__box__list-item__img-box">
+                                    <img src="images/gallery/portfolio-img-two-350x350.jpg" alt="portfolio image two" class="portfolio__box__list-item__thumbnail">
+                                </div>
+                                <div class="portfolio__box__list-item__desc">
+                                    <div class="portfolio__box__list-item__desc__content">
+                                        <strong>Soundcloud</strong>
+                                        <div class="bg-success short-border"></div>
+                                        <span>web design / app design</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-inline-item portfolio__box__list-item">
+                                <div class="portfolio__box__list-item__img-box">
+                                    <img src="images/gallery/portfolio-img-three-350x350.jpg" alt="portfolio image three" class="portfolio__box__list-item__thumbnail">
+                                </div>
+                                <div class="portfolio__box__list-item__desc">
+                                    <div class="portfolio__box__list-item__desc__content">
+                                        <strong>Soundcloud</strong>
+                                        <div class="bg-success short-border"></div>
+                                        <span>web design / app design</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-inline-item portfolio__box__list-item">
+                                <div class="portfolio__box__list-item__img-box">
+                                    <img src="images/gallery/portfolio-img-four-350x350.jpg" alt="portfolio image four" class="portfolio__box__list-item__thumbnail">
+                                </div>
+                                <div class="portfolio__box__list-item__desc">
+                                    <div class="portfolio__box__list-item__desc__content">
+                                        <strong>Soundcloud</strong>
+                                        <div class="bg-success short-border"></div>
+                                        <span>web design / app design</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-inline-item portfolio__box__list-item">
+                                <div class="portfolio__box__list-item__img-box">
+                                    <img src="images/gallery/portfolio-img-five-350x350.jpg" alt="portfolio image five" class="portfolio__box__list-item__thumbnail">
+                                </div>
+                                <div class="portfolio__box__list-item__desc">
+                                    <div class="portfolio__box__list-item__desc__content">
+                                        <strong>Soundcloud</strong>
+                                        <div class="bg-success short-border"></div>
+                                        <span>web design / app design</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-inline-item portfolio__box__list-item">
+                                <div class="portfolio__box__list-item__img-box">
+                                    <img src="images/gallery/portfolio-img-six-350x350.jpg" alt="portfolio image six" class="portfolio__box__list-item__thumbnail">
+                                </div>
+                                <div class="portfolio__box__list-item__desc">
+                                    <div class="portfolio__box__list-item__desc__content">
+                                        <strong>Soundcloud</strong>
+                                        <div class="bg-success short-border"></div>
+                                        <span>web design / app design</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-inline-item portfolio__box__list-item">
+                                <div class="portfolio__box__list-item__img-box">
+                                    <img src="images/gallery/portfolio-img-seven-350x350.jpg" alt="portfolio image seven" class="portfolio__box__list-item__thumbnail">
+                                </div>
+                                <div class="portfolio__box__list-item__desc">
+                                    <div class="portfolio__box__list-item__desc__content">
+                                        <strong>Soundcloud</strong>
+                                        <div class="bg-success short-border"></div>
+                                        <span>web design / app design</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-inline-item portfolio__box__list-item">
+                                <div class="portfolio__box__list-item__img-box">
+                                    <img src="images/gallery/portfolio-img-eight-350x350.jpg" alt="portfolio image eight" class="portfolio__box__list-item__thumbnail">
+                                </div>
+                                <div class="portfolio__box__list-item__desc">
+                                    <div class="portfolio__box__list-item__desc__content">
+                                        <strong>Soundcloud</strong>
+                                        <div class="bg-success short-border"></div>
+                                        <span>web design / app design</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 
             </section>
             
             <!-- our news section -->
-            <section class="container-fluid lay-news">
+            <section class="container lay-news news">
                 <div class="section-title">
                     <h1 class="section-title__h1">Our news</h1>
                 </div>
                 
-                <div>
-                    <aside>
-                        <div>
-                            <img src="#" alt="image">
-                            <div><span>READ MORE...</span></div>
+                <div class="row news__blog">
+                    <aside class="col-lg-4 col-xl-4 news__blog__post">
+                        <div class="news__blog__post__header">
+                            <img src="images/railway-station-blog-2-350x350.jpg" alt="railway station blog thumbnail" class="news__blog__post__thumbnail">
+                            <div class="news__blog__post__link-box">
+                                <div class="news__blog__post__link">
+                                    <a href="#" class="news__blog__post__link__text">
+                                        <span>READ MORE...</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h2>RAILWAY STATION</h2>
-                            <span>By Matrix / 05 Sep 2017</span>
-                            <P>
+                        <div class="news__blog__post__content">
+                            <h5 class="news__blog__post__content__title">
+                                <a href="#" class="news__blog__post__content__title__link">
+                                    RAILWAY STATION
+                                </a>
+                            </h5>
+                            <div class="news__blog__post__content__date">
+                                <span>By Matrix / 05 Sep 2017</span>
+                            </div>
+                            <P class="custom-p news__blog__post__content__text">
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been the
                                 industry's standard dummy text ever since the 1500s,
@@ -254,80 +321,130 @@
                             </P>
                         </div>
                     </aside>
-                    <aside>
-                        <div>
-                            <img src="#" alt="image">
-                            <div><span>READ MORE...</span></div>
+                    <aside class="col-xl-4 news__blog__post">
+                        <div class="news__blog__post__header">
+                            <img src="images/local-library-blog-350x350.jpg" alt="local library blog thumbnail" class="news__blog__post__thumbnail">
+                            <div class="news__blog__post__link-box">
+                                <div class="news__blog__post__link">
+                                    <a href="#" class="news__blog__post__link__text">
+                                        <span>READ MORE...</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h2>LOCAL LIBRARY</h2>
-                            <span>By Matrix / 26 May 2017</span>
-                            <P>
+                        <div class="news__blog__post__content">
+                            <h5 class="news__blog__post__content__title">
+                                <a href="#" class="news__blog__post__content__title__link">
+                                    LOCAL LIBRARY
+                                </a>
+                            </h5>
+                            <div class="news__blog__post__content__date">
+                                <span>By Matrix / 26 May 2017</span>
+                            </div>
+                            <p class="custom-p news__blog__post__content__text">
                                 It uses a dictionary of over 200 Latin words,
                                 combined with a handful of model sentence
                                 structures, to generate Lorem Ipsum which looks
                                 reasonable. The generated Lorem Ipsum is therefore
                                 always free from repetition, injected humour, or
                                 non-characteristic words etc.
-                            </P>
+                            </p>
                         </div>
                     </aside>
-                    <aside>
-                        <div>
-                            <img src="#" alt="image">
-                            <div><span>READ MORE...</span></div>
+                    <aside class="col-xl-4 news__blog__post">
+                        <div class="news__blog__post__header">
+                            <img src="images/our-journey-blog-350x350.jpg" alt="our journey blog thumbnail" class="news__blog__post__thumbnail">
+                            <div class="news__blog__post__link-box">
+                                <div class="news__blog__post__link">
+                                    <a href="#" class="news__blog__post__link__text">
+                                        <span>READ MORE...</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h2>OUR JOURNEY</h2>
-                            <span>By Matrix / 05 May 2017</span>
-                            <P>
+                        <div class="news__blog__post__content">
+                            <h5 class="news__blog__post__content__title">
+                                <a href="#" class="news__blog__post__content__title__link">
+                                    OUR JOURNEY
+                                </a>
+                            </h5>
+                            <div class="news__blog__post__content__date">
+                                <span>By Matrix / 05 May 2017</span>
+                            </div>
+                            <p class="custom-p news__blog__post__content__text">
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been the
                                 industry's standard dummy text ever since the 1500s,
                                 when an unknown printer took a galley of type and 
                                 scrambled it to make a type specimen book
-                            </P>
+                            </p>
                         </div>
                     </aside>
                 </div>
-                
-                <div>
-                    <div>
-                        <p>
+            </section>
+            
+            <!-- testimonial: part of news section -->
+            <div class="container-fluid">
+                <div class="row news__testimony">
+                    <div class="col-lg-6 col-xl-6"></div>
+                    <div class="col-lg-6 col-xl-6 offset-6 news__testimony__content">
+                        <i class="news__testimony__quote fa fa-quote-left" aria-hidden="true"></i>
+                        <p class="custom-p news__testimony__text">
                             Lorem Ipsum is simply dummy text of the printing
                             and typesetting industry. Lorem Ipsum has been the
                             industry's standard dummy text ever since the 1500s,
                             when an unknown printer took a galley of type and 
                             scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
-                        
-                        <strong>Elizabeth Taylor</strong> <br>
-                        <span>Graphic Designer &amp; Manager</span>
+
+                        <strong class="news__testimony__author-name">Elizabeth Taylor</strong> 
+                        <br>
+                        <span class="news__testimony__author-profession">Graphic Designer &amp; Manager</span>
                     </div>
                 </div>
-                
-            </section>
+            </div>
             
             <!-- our team section -->
-            <section class="container-fluid lay-team">
+            <section class="container lay-team">
                 <div class="section-title">
                     <h1 class="section-title__h1">Our team</h1>
                 </div>
                 
-                <div>
-                    <div>
-                        <div>
-                            <img src="" alt="image">
-                            <div>
-                                <i>icon</i>
-                                <i>icon</i>
-                                <i>icon</i>
+                <div class="row team">
+                    <div class="col-xl-6 team__member">
+                        <div class="team__member__info">
+                            <img src="images/team-thumbnail-one-300x300.jpg" 
+                                 alt="team thumbnail one" 
+                                 class="team__member__info__thumbnail">
+                            
+                            <div class="team__member__info__contact">
+                                <div class="team__member__info__contact__detail">
+                                    <div class="team__member__info__contact__detail__social">
+                                        <a href="#">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team__member__info__contact__detail__social">
+                                        <a href="#">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team__member__info__contact__detail__social">
+                                        <a href="#">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <h4>Thomas Anderson</h4>
-                            <span>Graphic Designer</span>
-                            <p>
+                        <div class="team__member__role">
+                            <div class="team__member__role__name text-success">
+                                <h4>Thomas Anderson</h4>
+                            </div>
+                            <div class="team__member__role__profession">
+                                <span>Graphic Designer</span>
+                            </div>
+                            <p class="custom-p team__member__role__text">
                                 Lorem Ipsum is simply dummy text of the 
                                 printing and typesetting industry. Lorem 
                                 Ipsum has been the industry's standard 
@@ -338,19 +455,40 @@
                         </div>
                     </div>
                     
-                    <div>
-                        <div>
-                            <img src="" alt="image">
-                            <div>
-                                <i>icon</i>
-                                <i>icon</i>
-                                <i>icon</i>
+                    <div class="col-xl-6 team__member">
+                        <div class="team__member__info">
+                            <img src="images/team-thumbnail-two-300x300.jpg" 
+                                 alt="team thumbnail one" 
+                                 class="team__member__info__thumbnail">
+                            
+                            <div class="team__member__info__contact">
+                                <div class="team__member__info__contact__detail">
+                                    <div class="team__member__info__contact__detail__social">
+                                        <a href="#">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team__member__info__contact__detail__social">
+                                        <a href="#">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team__member__info__contact__detail__social">
+                                        <a href="#">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <h4>Lilly Simpson</h4>
-                            <span>Photographer</span>
-                            <p>
+                        <div class="team__member__role">
+                            <div class="team__member__role__name">
+                                <h4>Lilly Simpson</h4>
+                            </div>
+                            <div class="team__member__role__profession">
+                                <span>Photographer</span>
+                            </div>
+                            <p class="custom-p team__member__role__text">
                                 Lorem Ipsum is simply dummy text of the 
                                 printing and typesetting industry. Lorem 
                                 Ipsum has been the industry's standard 
@@ -361,19 +499,40 @@
                         </div>
                     </div>
                     
-                    <div>
-                        <div>
-                            <img src="" alt="image">
-                            <div>
-                                <i>icon</i>
-                                <i>icon</i>
-                                <i>icon</i>
+                    <div class="col-xl-6 team__member">
+                       <div class="team__member__info">
+                            <img src="images/team-thumbnail-three-300x300.jpg" 
+                                 alt="team thumbnail one" 
+                                 class="team__member__info__thumbnail">
+                            
+                            <div class="team__member__info__contact">
+                                <div class="team__member__info__contact__detail">
+                                    <div class="team__member__info__contact__detail__social">
+                                        <a href="#">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team__member__info__contact__detail__social">
+                                        <a href="#">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team__member__info__contact__detail__social">
+                                        <a href="#">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <h4>Elizabeth bennnet</h4>
-                            <span>Graphic Designer</span>
-                            <p>
+                        <div class="team__member__role">
+                            <div class="team__member__role__name">
+                                <h4>Elizabeth bennet</h4>
+                            </div>
+                            <div class="team__member__role__profession">
+                                <span>Graphic Designer</span>
+                            </div>
+                            <p class="custom-p team__member__role__text">
                                 Lorem Ipsum is simply dummy text of the 
                                 printing and typesetting industry. Lorem 
                                 Ipsum has been the industry's standard 
@@ -384,19 +543,40 @@
                         </div>
                     </div>
                     
-                    <div>
-                        <div>
-                            <img src="" alt="image">
-                            <div>
-                                <i>icon</i>
-                                <i>icon</i>
-                                <i>icon</i>
+                    <div class="col-xl-6 team__member">
+                       <div class="team__member__info">
+                            <img src="images/team-thumbnail-four-300x300.jpg" 
+                                 alt="team thumbnail one" 
+                                 class="team__member__info__thumbnail">
+                            
+                            <div class="team__member__info__contact">
+                                <div class="team__member__info__contact__detail">
+                                    <div class="team__member__info__contact__detail__social">
+                                        <a href="#">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team__member__info__contact__detail__social">
+                                        <a href="#">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="team__member__info__contact__detail__social">
+                                        <a href="#">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <h4>Oliver Croft</h4>
-                            <span>Creative Designer</span>
-                            <p>
+                        <div class="team__member__role">
+                            <div class="team__member__role__name">
+                                <h4>Oliver Croft</h4>
+                            </div>
+                            <div class="team__member__role__profession">
+                                <span>Creative Designer</span>
+                            </div>
+                            <p class="custom-p team__member__role__text">
                                 Lorem Ipsum is simply dummy text of the 
                                 printing and typesetting industry. Lorem 
                                 Ipsum has been the industry's standard 
@@ -405,53 +585,59 @@
                                 and scrambled it to make a type specimen book
                             </p>
                         </div>
-                    </div>
-                </div>
-                
-                <div>
-                    <div>
-                        <a href="#"><img src="#" alt="image"> THE VERGE</a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="#" alt="image"> Mashable</a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="#" alt="image"> appboy</a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="#" alt="image"> Behance</a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="#" alt="image"> dribbble</a>
                     </div>
                 </div>
                                 
             </section>
             
+            <!-- sponsor section: sub-section of the  -->
+            <div class="container-fluid sponsor">
+                <div class="row sponsor__all">
+                    <div class="col-xl-2 sponsor__all__single">
+                        <a href="#"><img src="images/logos/verge-logo.png" alt="The verge Sponsor Logo"></a>
+                    </div>
+                    <div class="col-xl-2 sponsor__all__single">
+                        <a href="#"><img src="images/logos/mashable-logo.png" alt="Mashable Sponsor Logo"></a>
+                    </div>
+                    <div class="col-xl-2 sponsor__all__single">
+                        <a href="#"><img src="images/logos/behance-logo.png" alt="Behance Sponsor Logo"></a>
+                    </div>
+                    <div class="col-xl-2 sponsor__all__single">
+                        <a href="#"><img src="images/logos/dribbble-logo.png" alt="Dribbble Sponsor Logo"></a>
+                    </div>
+                    <div class="col-xl-2 sponsor__all__single">
+                        <a href="#"><img src="images/logos/buzzfeed-logo.png" alt="BuzzFeed Sponsor Logo"></a>
+                    </div>
+                </div>
+            </div>
+            
             
             <!-- pricing table section -->
-            <section class="container-fluid lay-pricing">
+            <section class="container lay-pricing">
                 <div class="section-title">
                     <h1 class="section-title__h1">Pricing table</h1>
                 </div>
                 
-                <div>
-                    <div>
-                        <div>
-                            <div></div>
-                            <h4>STANDARD</h4>
+                <div class="row pricing-table">
+                    <div class="col-xl-4 pricing-table__plan">
+                        <div class="pricing-table__plan__head">
+                            <div class="pricing-table__plan__head__thumbnail">
+                                <div class="pricing-table__plan__head__thumbnail-clip">
+                                </div>
+                            </div>
+                            <div class="pricing-table__plan__head__title">
+                                <h4>STANDARD</h4>
+                            </div>
                         </div>
                         
-                        <div>
-                            <div>
-                                <sup>$</sup>
-                                <strong>55</strong>
-                                <span>/Month</span>
+                        <div class="pricing-table__plan__content">
+                            <div class="pricing-table__plan__content__price">
+                                <sup>$</sup><strong>55</strong><span>/Month</span>
                             </div>
-                            <div>short border</div>
+                            <div class="bg-success m-auto short-border"></div>
                             
-                            <div>
-                                <ul>
+                            <div class="pricing-table__plan__content__options">
+                                <ul class="list-unstyled">
                                     <li><span>Unlimited products</span></li>
                                     <li><span>Mobile website and store</span></li>
                                     <li><span>Customer support</span></li>
@@ -461,29 +647,30 @@
                                 </ul>
                             </div>
                             
-                            <div>
-                                <a href="#"><span>Purchase</span></a>
+                            <div class="pricing-table__plan__content__btn">
+                                <a href="#" class="btn btn-success btn-square"><span>Purchase</span></a>
                             </div>
-                            
                         </div>
                     </div>
                     
-                    <div>
-                        <div>
-                            <div></div>
-                            <h4>PREMIUM</h4>
+                    <div class="col-xl-4 pricing-table__plan">
+                        <div class="pricing-table__plan__head">
+                            <div class="pricing-table__plan__head__thumbnail">
+                                <div class="pricing-table__plan__head__thumbnail-clip">
+                                </div>
+                            </div>
+                            <div class="pricing-table__plan__head__title">
+                                <h4>PREMIUM</h4>
+                            </div>
                         </div>
                         
-                        <div>
-                            <div>
-                                <sup>$</sup>
-                                <strong>95</strong>
-                                <span>/Month</span>
+                        <div class="pricing-table__plan__content">
+                            <div class="pricing-table__plan__content__price">
+                                <sup>$</sup><strong>95</strong><span>/Month</span>
                             </div>
-                            <div>short border</div>
-                            
-                            <div>
-                                <ul>
+                            <div class="bg-success m-auto short-border"></div>
+                            <div class="pricing-table__plan__content__options">
+                                <ul class="list-unstyled">
                                     <li><span>Unlimited products</span></li>
                                     <li><span>Mobile website and store</span></li>
                                     <li><span>Customer support</span></li>
@@ -492,30 +679,33 @@
                                     <li><span>Unlimited email</span></li>
                                 </ul>
                             </div>
-                            
-                            <div>
-                                <a href="#"><span>Purchase</span></a>
+                            <div class="pricing-table__plan__content__btn">
+                                <a href="#" class="btn btn-success btn-square"><span>Purchase</span></a>
                             </div>
-                            
                         </div>
                     </div>
                     
-                    <div>
-                        <div>
-                            <div></div>
-                            <h4>ULTIMATE</h4>
+                    <div class="col-xl-4 pricing-table__plan">
+                        
+                        <div class="pricing-table__plan__head">
+                            <div class="pricing-table__plan__head__thumbnail">
+                                <div class="pricing-table__plan__head__thumbnail-clip">
+                                </div>
+                            </div>
+                            <div class="pricing-table__plan__head__title">
+                                <h4>ULTIMATE</h4>
+                            </div>
                         </div>
                         
-                        <div>
-                            <div>
-                                <sup>$</sup>
-                                <strong>160</strong>
-                                <span>/Month</span>
+                        <div class="pricing-table__plan__content">
+                            <div class="pricing-table__plan__content__price">
+                                <sup>$</sup><strong>160</strong><span>/Month</span>
                             </div>
-                            <div>short border</div>
                             
-                            <div>
-                                <ul>
+                            <div class="bg-success m-auto short-border"></div>
+                            
+                            <div class="pricing-table__plan__content__options">
+                                <ul class="list-unstyled">
                                     <li><span>Unlimited products</span></li>
                                     <li><span>Mobile website and store</span></li>
                                     <li><span>Customer support</span></li>
@@ -525,21 +715,23 @@
                                 </ul>
                             </div>
                             
-                            <div>
-                                <a href="#"><span>Purchase</span></a>
+                            <div class="pricing-table__plan__content__btn">
+                                <a href="#" class="btn btn-success btn-square"><span>Purchase</span></a>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
             </section>
             
+            
             <!-- footer section -->
-            <footer class="container-fluid">
-                <div>hexagone figure</div>
+            <footer class="container-fluid footer">
+                <div class="hexagon">
+                    <i class="fa fa-lg fa-chevron-up" aria-hidden="true"></i>
+                </div>
                 
-                <div class="row">
-                    <div>
+                <div class="row footer__main">
+                    <div class="col-xl-3 footer__main__about">
                         <h5>About us</h5>
                         <p>
                             There are many variation of passages of
@@ -549,104 +741,181 @@
                             don't look even slightly believable.
                         </p>
 
-                        <address>
-                            <i>email</i> <a href="mailto:matrix@matrix.com">matrix@matrix.com</a>
-                            <br>
-                            <i>phone</i> 78 135 531 169 
-                            <br>
-                            <i>map</i> Newton Ave, mo
-                            <br>
-                            SomeWhere, NO 12345
+                        <address class="footer__main__about__contacts">
+                            <div class="footer__main__about__contact">
+                                <div>
+                                    <i class="fa fa-lg fa-envelope-o" aria-hidden="true"></i> 
+                                </div>
+                                <div>
+                                    <a href="mailto:matrix@matrix.com">matrix@matrix.com</a>
+                                </div>
+                            </div>
+                            <div class="footer__main__about__contact">
+                                <div>
+                                    <i class="fa fa-lg fa-phone" aria-hidden="true"></i> 
+                                </div>
+                                <div>
+                                    <span>78 135 531 169</span>
+                                </div>
+                            </div>
+                            <div class="footer__main__about__contact">
+                                <div>
+                                    <i class="fa fa-lg fa-map-marker" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <span>Newton Ave, mo
+                                        <br>SomeWhere, NO 12345
+                                    </span>
+                                </div>
+                            </div>
                         </address>
                     </div>
-
-                    <div>
+                    
+                    <div class="col-xl-3 footer__main__news">
                         <h5>Recent news</h5>
-                        <div>
-                            <div>
-                                <img src="#">
-                                <div></div>
+                        <div class="footer__main__news__post">
+                            <div class="footer__main__news__post__thumb">
+                                <img src="images/fthumb_railway-station-blog-2-100x100.jpg" alt="thumbnail: railway station">
+                                <div class="footer__main__news__post__thumb__outer-box">
+                                    <div class="footer__main__news__post__thumb__inner-box">
+                                        <a href="#">
+                                            <i class="fa fa-2x fa-search" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
+                            <div class="footer__main__news__post__content">
                                 <span>
                                     Lorem Ipsum is simply
                                     dummy text of the 
                                     printing and typesetting
-                                </span> <br>
-                                <strong>By Matrix / 05 Sep 2017</strong>
+                                </span>
+                                <div>
+                                    <strong>By Matrix / 05 Sep 2017</strong>
+                                </div>
                             </div>
                         </div>
                         
-                        <div>
-                            <div>
-                                <img src="#">
-                                <div></div>
+                        <div class="footer__main__news__post">
+                            <div class="footer__main__news__post__thumb">
+                                <img src="images/fthumb_local-library-blog-100x100.jpg" alt="thumbnail: local library">
+                                <div class="footer__main__news__post__thumb__outer-box">
+                                    <div class="footer__main__news__post__thumb__inner-box">
+                                        <a href="#">
+                                            <i class="fa fa-2x fa-search" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
+                            <div class="footer__main__news__post__content">
                                 <span>
                                     It uses a dictionary of over
                                     200 Latin words,
                                     combined with a handful
-                                </span> <br>
-                                <strong>By Matrix / 26 May 2017</strong>
+                                </span>
+                                <div>
+                                    <strong>By Matrix / 26 May 2017</strong>
+                                </div>
                             </div>
                         </div>
-
-                        <div>
-                            <div>
-                                <img src="#">
-                                <div></div>
+                        <div class="footer__main__news__post">
+                            <div class="footer__main__news__post__thumb">
+                                <img src="images/fthumb_our-journey-blog-100x100.jpg" alt="thumbnail: our journey">
+                                <div class="footer__main__news__post__thumb__outer-box">
+                                    <div class="footer__main__news__post__thumb__inner-box">
+                                        <a href="#">
+                                            <i class="fa fa-2x fa-search" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
+                            <div class="footer__main__news__post__content">
                                 <span>
                                     Lorem Ipsum is simply
                                     dummy text of the 
                                     printing and typesetting
-                                </span> <br>
-                                <strong>By Matrix / 05 May 2017</strong>
+                                </span>
+                                <div>
+                                    <strong>By Matrix / 05 May 2017</strong>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div>
+                    <div class="col-xl-3 footer__main__works">
                         <h5>Recent works</h5>
-                        <div>
-                            <img src="#" alt="image">
-                            <img src="#" alt="image">
-                            <img src="#" alt="image">
-                            <img src="#" alt="image">
-                            <img src="#" alt="image">
-                            <img src="#" alt="image">
+                        <div class="footer__main__works__thumbnails">
+                            <a href="#">
+                                <img src="images/gallery/fthumb_portfolio-img-one-100x100.jpg" alt="portfolio footer thumbnail">
+                            </a>
+                            <a href="#">
+                                <img src="images/gallery/fthumb_portfolio-img-two-100x100.jpg" alt="portfolio footer thumbnail">
+                            </a>
+                            <a href="#">
+                                <img src="images/gallery/fthumb_portfolio-img-three-100x100.jpg" alt="portfolio footer thumbnail">
+                            </a>
+                            <a href="#">
+                                <img src="images/gallery/fthumb_portfolio-img-six-100x100.jpg" alt="portfolio footer thumbnail">
+                            </a>
+                            <a href="#">
+                                <img src="images/gallery/fthumb_portfolio-img-seven-100x100.jpg" alt="portfolio footer thumbnail">
+                            </a>
+                            <a href="#">
+                                <img src="images/gallery/fthumb_portfolio-img-eight-100x100.jpg" alt="portfolio footer thumbnail">
+                            </a>
                         </div>
+                        <div class="footer__main__works__more">
+                            <a href="#">
+                                <span>View more </span> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        
                     </div>
                     
-                    <div>
+                    <div class="col-xl-3 footer__main__contact">
                         <h5>Keep in touch</h5>
-                        <div>
-                            <input type="search">
+                        <div class="footer__main__contact__form">
+                            <form action="#" method="get">
+                                <input type="email" value="" placeholder="Enter your email to subscribe" class="footer__main__contact__form__input">
+                            </form>
                         </div>
-                        <div>
-                            <i>icon</i>
-                            <i>icon</i>
-                            <i>icon</i>
-                            <i>icon</i>
-                            <i>icon</i>
+                        <div class="footer__main__contact__icons">
+                            <div class="footer__main__contact__icon">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="footer__main__contact__icon">
+                                <a href="#">
+                                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="footer__main__contact__icon">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <di class="footer__main__contact__icon">
+                                <a href="#">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </di>
                         </div>
                     </div>
                 </div>
                 
-                <div class="row">
-                    <nav>
+                <div class="row footer__bottom">
+                    <nav class="col-xl-6 footer__bottom__nav">
                         <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">PORTFOLIO</a></li>
-                            <li><a href="#">BLOG</a></li>
-                            <li><a href="#">CONTACT</a></li>
+                            <li class="list-inline-item"><a href="#">HOME</a></li>
+                            <li class="list-inline-item"><a href="#">ABOUT</a></li>
+                            <li class="list-inline-item"><a href="#">PORTFOLIO</a></li>
+                            <li class="list-inline-item"><a href="#">BLOG</a></li>
+                            <li class="list-inline-item"><a href="#">CONTACT</a></li>
                         </ul>
                     </nav>
-                    <div>
-                        <small>©2017 MATRIX|DESIGN BY WADSON FOURRIEN</small>
+                    <div class="col-xl-6 footer__bottom__copyright">
+                        <small>©2017 MATRIX | DESIGN BY WADSON FOURRIEN</small>
                     </div>
                 </div>
             </footer>
