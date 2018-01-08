@@ -1,30 +1,34 @@
 .lay-header {
     width: 100%;
     min-height: 100vh;
-    background: url(../images/header-prototype.png) center;
+    background: linear-gradient(0deg, rgba(0,50,0,0.7), 
+        rgba(0,0,0,0.6)), url(../images/header-1500x1000.jpg) center;
     color: aliceblue;
 }
 
 .lay-about {
-    min-height: 500px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.lay-recent-works {
-    
+.lay-portfolio {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .lay-news {
-    
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .lay-team {
-    
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .lay-pricing {
-    
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .lay-footer {
